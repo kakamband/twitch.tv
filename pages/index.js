@@ -1,23 +1,17 @@
-import React from 'react'
-import Sidebar from '../components/Sidebar'
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import CardHover from "../components/CardHover";
 
 export default function index() {
-    return (
-        <div>
-            
-            <Sidebar />
+  return (
+    <div>
+      {/* <Sidebar /> */}
 
-
-
-
-
-
-        <style global jsx>{`
-        body{
-            margin: 0px;
+      <CardHover border="yellow" />
+      <style global jsx>{`
+        body {
         }
-        `}</style>
-
-        </div>
-    )
+      `}</style>
+    </div>
+  );
 }
