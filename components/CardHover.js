@@ -12,7 +12,7 @@ export default function CardHover(props) {
           height: 200px;
           border-left: 0px solid transparent;
           border-bottom: 0px solid transparent;
-          transition: all .4s ease;
+          transition: all .4s;
         }
         .card-wrapper:hover {
           border-left: 10px solid ${props.border || "red"};

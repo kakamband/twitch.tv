@@ -51,6 +51,7 @@ export default function Sidebar() {
             width: ${SidebarIsClosed == false ? "240px" : "50px"};
             height: 100vh;
             background-color: #191919;
+            position: absolute;
         }
 
         .header{
