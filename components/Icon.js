@@ -16,7 +16,7 @@ export default function Icon(props) {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: black;
+                background-color: #191919;
                 color: white;
                 width: 100%;
                 padding-bottom: 8px;

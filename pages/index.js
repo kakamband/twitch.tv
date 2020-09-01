@@ -5,13 +5,20 @@ import CardHover from "../components/CardHover";
 export default function index() {
   return (
     <div>
-      {/* <Sidebar /> */}
+      <Sidebar />
 
-      <CardHover border="yellow" />
+      <CardHover border="purple" />
+
+
+
       <style global jsx>{`
         body {
+          margin: 0px;
         }
+        
       `}</style>
+
+
     </div>
   );
 }
