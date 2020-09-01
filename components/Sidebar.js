@@ -35,7 +35,8 @@ export default function Sidebar() {
 
         .wrapper{
             width: ${SidebarIsClosed == false ? "240px" : "50px"};
-            height: 100vh;  //*NÃO FUNCIONA*//
+            height: 100vh;
+            background: green;
         }
 
         .header{
