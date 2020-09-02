@@ -2,20 +2,21 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import CardHover from "../components/CardHover";
 import Iconfront from "../components/Iconfront"
+import Carouselfront from '../components/Carouselfront'
 
 export default function index() {
   return (
     <div>
-      <Sidebar />
 
-      <div className="baner">
-        <img src="https://www.oficinadanet.com.br/imagens/post/30406/riot-valorant-beta-fechado-comeca-7-de-abril.jpg"></img>
-        <Iconfront />
-      </div>
+      {/* 
+      <Sidebar />
+      */}
+
+
+      <Carouselfront />
 
       {/*
       <div className="card-front">
-        <CardHover border="purple" />
         <CardHover border="purple" />
       </div>
       */}
@@ -27,13 +28,6 @@ export default function index() {
       `}</style>
 
       <style jsx>{`
-      .baner{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-      
       img{
         width: 720px;
         height: 420px;
@@ -42,7 +36,6 @@ export default function index() {
       .card-front{
         display: flex;
         align-items: center;
-        justify-content: space-between;
       }
       `}</style>
 
