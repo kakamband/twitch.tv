@@ -6,39 +6,50 @@ import Carouselfront from '../components/Carouselfront'
 
 export default function index() {
   return (
-    <div>
-
-      {/* 
-      <Sidebar />
-      */}
+    <div className="wrapper">
 
 
-      <Carouselfront />
 
-      {/*
+
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+      <div className="carousel">
+        <Carouselfront />
+      </div>
       <div className="card-front">
         <CardHover border="purple" />
       </div>
-      */}
 
-      <style global jsx>{`
-        body {
-          margin: 0px;
-        }
-      `}</style>
 
       <style jsx>{`
-      img{
-        width: 720px;
-        height: 420px;
+      .wrapper{
+        display: flex;
       }
+      .sidebar{
+        flex: 1;
+      }
+      .carousel{
+        flex: 2;
 
+      }
       .card-front{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding-top: 130px;
       }
       `}</style>
 
+
+
+      
+      <style global jsx>{`
+        body {
+          margin: 0px;
+          background-color: black; 
+        }
+      `}</style>
     </div>
   );
 }

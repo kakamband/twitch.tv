@@ -3,18 +3,21 @@ import React from 'react'
 export default function Iconfront(props) {
     return (
       <div className="wrapper">
-        <img className="baner"></img>
 
-            <div className="topo">
-                <div className="user-Photo"></div>
-                <div className="info">
-                    <div className="user-Name">{props.nomeUsuario}</div>
-                    <div className="user-Game">{props.nomeGame}</div>
-                    <div className="user-View">{props.viewUser}</div>
-                </div>
-                <button>{props.userLanguage}</button>
-                <div className="user-Description">{props.description}</div>
+        <img className="baner"></img>
+        <div className="topo">
+          <div className="wrapper2">
+            <div className="user-Photo"></div>
+            <div className="info">
+              <div className="user-Name">{props.nomeUsuario}</div>
+              <div className="user-Game">{props.nomeGame}</div>
+              <div className="user-View">{props.viewUser}</div>
             </div>
+          </div>
+
+          <button>{props.userLanguage}</button>
+          <div className="user-Description">{props.description}</div>
+        </div>
 
         <style jsx>{`
           .wrapper {
@@ -32,6 +35,9 @@ export default function Iconfront(props) {
             height: 420px;
             background-color: #191919;
             color: white;
+          }
+          .wrapper2{
+            display: flex;
           }
           .user-Photo {
             background: url(${props.photoUser}) no-repeat center center / cover;

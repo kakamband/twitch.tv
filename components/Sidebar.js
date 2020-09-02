@@ -50,8 +50,7 @@ export default function Sidebar() {
         .wrapper{
             width: ${SidebarIsClosed == false ? "240px" : "50px"};
             height: 100vh;
-            background-color: #191919;
-            position: absolute;
+            background-color: #191919;  
         }
 
         .header{

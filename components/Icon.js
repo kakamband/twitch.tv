@@ -3,15 +3,13 @@ import React from 'react'
 export default function Icon(props) {
     return (
         <div className="wrapper">
-
+            
             {props.min == true ? <div className="user-photo"></div> : <><div className="user-photo"></div>
                 <div className="user-info">
                 <h4>{props.userName || "User Name"}</h4>
                 <h6>{props.userGame || "Game Name"}</h6>
             </div>
-            {props.userOnline == true ? <div className="user-views"><div className="online"></div>{props.userViews}</div> : "Offline"}</>}  
-
-            ashdfjksahfkjsdhfkjsd
+            {props.userOnline == true ? <div className="user-views"><div className="online"></div>{props.userViews}</div> : "Offline"}</>} 
 
             <style jsx>{`
             .wrapper{
